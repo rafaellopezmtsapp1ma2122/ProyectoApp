@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ry8-uE-vae">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rtk-ct-zyU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -119,10 +119,32 @@
                         <viewLayoutGuide key="safeArea" id="GUr-5E-oTW"/>
                         <color key="backgroundColor" red="0.22674661870000001" green="0.25084635620000001" blue="0.26346424219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="Vectorhome" id="kOH-jb-dgR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mpc-K4-yU4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200" y="773"/>
+            <point key="canvasLocation" x="2017" y="66"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="egq-XG-ExK">
+            <objects>
+                <tabBarController id="rtk-ct-zyU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sb0-0N-xOr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.91175574059999998" green="0.86731261010000005" blue="0.499614954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.22674661870000001" green="0.25084635620000001" blue="0.26346424219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nYZ-si-7AD" kind="relationship" relationship="viewControllers" id="pxb-Mc-9VV"/>
+                        <segue destination="JwM-Qy-k7R" kind="relationship" relationship="viewControllers" id="Hav-95-Btx"/>
+                        <segue destination="AVq-Al-WuK" kind="relationship" relationship="viewControllers" id="r6L-L9-wyZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAw-43-gjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="66"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ats-YQ-Eqg">
@@ -159,8 +181,43 @@
             </objects>
             <point key="canvasLocation" x="-643" y="66"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="rvv-FK-HwG">
+            <objects>
+                <viewController id="JwM-Qy-k7R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1TY-41-JTY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Y6Z-CM-Tsf"/>
+                        <color key="backgroundColor" red="0.22674661870000001" green="0.25084635620000001" blue="0.26346424219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Vectorforum" id="nVp-8b-Grh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUf-J0-wrV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016" y="-613"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U4i-M2-vgq">
+            <objects>
+                <viewController id="AVq-Al-WuK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d8A-d0-spd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gN9-IH-cgh"/>
+                        <color key="backgroundColor" red="0.22674661870000001" green="0.25084635620000001" blue="0.26346424219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Group 227profile" id="g80-E4-A3B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgZ-Pm-c9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016" y="808"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Group 227profile" width="27" height="27"/>
         <image name="Group 232" width="260" height="34"/>
+        <image name="Vectorforum" width="27" height="27"/>
+        <image name="Vectorhome" width="27" height="27"/>
     </resources>
 </document>

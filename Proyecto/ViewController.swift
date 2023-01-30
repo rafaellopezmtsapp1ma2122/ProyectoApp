@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             }
             //Preparamos las variables a enviar
             let body: [String: String] = ["nombre": myUser.text ?? "", "paswd": myPass.text ?? ""]
+           
             let finalBody = try? JSONSerialization.data(withJSONObject: body)
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
